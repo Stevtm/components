@@ -1,10 +1,13 @@
 // page imports
 import Landing from "./pages/Landing";
 
+// component imports
+import Nav from "./components/Nav";
+
 const App = () => {
     return <>
-    <h1>components</h1>
-    <Landing />
+        < Nav />
+        <Landing />
     </>
 }
 
