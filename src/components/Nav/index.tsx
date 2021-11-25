@@ -10,7 +10,7 @@ import {
 const Nav: React.FC = () => {
     return (
         <NavContainer>
-            <Logo>Components</Logo>
+            <Logo>components</Logo>
             <NavButtonsList>
                 <NavButton>
                     <NavLink>Cards</NavLink>
