@@ -1,3 +1,6 @@
+// import package dependencies
+import { Link } from "react-router-dom";
+
 // styled component imports
 import {
     NavContainer,
@@ -10,10 +13,15 @@ import {
 const Nav: React.FC = () => {
     return (
         <NavContainer>
-            <Logo>components</Logo>
+            <Link to="/">
+                <Logo>components</Logo>
+            </Link>
+
             <NavButtonsList>
                 <NavButton>
-                    <NavLink>Cards</NavLink>
+                    <Link to="/cards">
+                        <NavLink>Cards</NavLink>
+                    </Link>
                 </NavButton>
                 <NavButton>
                     <NavLink>Buttons</NavLink>
