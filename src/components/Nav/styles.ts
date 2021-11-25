@@ -17,6 +17,7 @@ export const NavContainer = styled.nav`
 
 export const Logo = styled.h1`
     /* box model */
+    margin: 0.625rem 0;
 
     /* layout */
 
