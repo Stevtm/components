@@ -1,5 +1,6 @@
 import { ThemeProvider } from "styled-components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import styled from "styled-components";
 
 // import theme and global style
 import { GlobalStyles } from "./global";
@@ -8,9 +9,20 @@ import { theme } from "./theme";
 // page imports
 import Landing from "./pages/Landing";
 import Cards from "./pages/Cards";
+import Buttons from "./pages/Buttons";
 
 // component imports
 import Nav from "./components/Nav";
+
+// main body container
+const MainContent = styled.div`
+    /* box model */
+
+    /* layout */
+    margin: 1rem;
+
+    /* visual */
+`;
 
 const App = () => {
     return (
@@ -18,12 +30,13 @@ const App = () => {
             <GlobalStyles />
             <BrowserRouter>
                 <Nav />
-                <div>
+                <MainContent>
                     <Routes>
                         <Route path="/" element={<Landing />} />
                         <Route path="/cards" element={<Cards />} />
+                        <Route path="/buttons" element={<Buttons />} />
                     </Routes>
-                </div>
+                </MainContent>
             </BrowserRouter>
         </ThemeProvider>
     );

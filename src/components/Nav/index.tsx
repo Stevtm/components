@@ -24,7 +24,9 @@ const Nav: React.FC = () => {
                     </Link>
                 </NavButton>
                 <NavButton>
-                    <NavLink>Buttons</NavLink>
+                    <Link to="/buttons">
+                        <NavLink>Buttons</NavLink>
+                    </Link>
                 </NavButton>
                 <NavButton>
                     <NavLink>Text</NavLink>
