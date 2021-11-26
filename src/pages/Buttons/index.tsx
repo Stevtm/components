@@ -1,5 +1,16 @@
+// import components
+import BasicButton from "../../components/Buttons/BasicButton/BasicButton";
+
+//import styled components
+import { ButtonsContainer, SectionHeader } from "./styles";
+
 const Buttons: React.FC = () => {
-    return <h2>Buttons!</h2>;
+  return (
+    <ButtonsContainer>
+      <SectionHeader>Buttons</SectionHeader>
+      <BasicButton />
+    </ButtonsContainer>
+  );
 };
 
 export default Buttons;
